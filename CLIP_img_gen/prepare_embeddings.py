@@ -10,10 +10,13 @@ from tqdm import tqdm
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument('--data_path', default='/apdcephfs_cq3/share_2909871/inkyu/low_poly_retrieval/low_poly_embs_building_22views')
+
+    parser.add_argument('--emb_name', default='gltf_all')
+
     args = parser.parse_args()
-    EMB_PATH = 'emb/lowpoly_origin_img_emb_building_22views.pt'
-    OBJ_PATH = 'emb/lowpoly_keys_building_22views.pkl'
-    EMB_2_OBJ_PATH = 'emb/emb_idx_2_lowpolyobj_idx_building_22views.pkl'
+    EMB_PATH = f'emb/{args.emb_name}.pt'
+    OBJ_PATH = f'emb/{args.emb_name}_keys.pkl'
+    EMB_2_OBJ_PATH = f'emb/emb_idx_2_{args.emb_name}.pkl'
 
     
     objs = []

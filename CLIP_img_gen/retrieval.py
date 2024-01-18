@@ -12,9 +12,9 @@ from PIL import Image
 
 import ipdb
 
-FAISS_GPU_IDX_PATH = "emb/lowpoly_faiss_gpu_index_normalised_building_22views.npy"
-OBJ_PATH = 'emb/lowpoly_keys_building_22views.pkl'
-EMB_2_OBJ = 'emb/emb_idx_2_lowpolyobj_idx_building_22views.pkl'
+FAISS_GPU_IDX_PATH = "emb/faiss_idx_gltf_all.npy"
+OBJ_PATH = 'emb/gltf_all_keys.pkl'
+EMB_2_OBJ = 'emb/emb_idx_2_gltf_all.pkl'
 
 def load_faiss_index_gpu(path=FAISS_GPU_IDX_PATH):
     res = faiss.StandardGpuResources()
