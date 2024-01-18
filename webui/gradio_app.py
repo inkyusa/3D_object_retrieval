@@ -20,7 +20,7 @@ import rembg
 import torch
 from PIL import Image
 
-OBJAVERSE_PATH = '/home/inkyu/workspace/gltf_all'
+OBJAVERSE_PATH = '/media/inkyu/SSD_2TB_Black/Dataset/3D_assets/gltf_all'
 TMP_PNG = 'data/webui.png'
 
 from CLIP_img_gen.retrieval import (
