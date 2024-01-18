@@ -3,7 +3,7 @@ import argparse
 # import faiss
 import torch
 import pickle
-import ipdb
+# import ipdb
 from tqdm import tqdm
 
 

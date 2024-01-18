@@ -1,8 +1,6 @@
 # Faiss toy example and profiling
 
-This repo contains a toy faiss example that retrieves images from unsplash25k dataset as shown below
-
-<img src="./assets/diagram.png" width="700">
+This repo contains 3D model retreival either from text or image
 
 ## Software version
 | Package | Version      | Description            |
@@ -23,16 +21,11 @@ pip install torch==1.13.0 torchvision==0.14.0 rembg faiss-gpu==1.7.2 diffusers==
 ```
 
 ## Dataset download
-One can download the public dataset from [unsplash25k from hf](https://huggingface.co/datasets/jamescalam/unsplash-25k-photos) and save them under `input/unsplash` folder
-
-## Technical detail and results
-More technical detail and experimental results can be found from [here](https://tencentoverseas-my.sharepoint.com/:p:/g/personal/inkyusa_global_tencent_com/ESpkXrXoKTVLiNJRMkgX9_MBpTdQJ0-xG4eZOt6ENNRZDA?e=auxd90)
-
-<img src="./assets/profiling.png" width="700">
+(WIP)
 
 # Objaverse Retrival
 
-## 1. Generate asset foler nmae json
+## 1. Generate asset foler name json
 ```bash
 python CLIP_img_gen/gen_json.py --folder_path /home/inkyu/workspace/objaverse-rendering-private/rendered/gltf_all --output_file /home/inkyu/workspace/objaverse-rendering-private/rendered/rendering_folder_names_gltf_all.json
 ```
@@ -79,7 +72,10 @@ car09.gltf
 
 ## 5. Deploy the webui
 
-  ### 5.1 Run webui: `python webui/gradio_app.py`
+Update `OBJAVERSE_PATH` in `gradio_app.py` and run
+```bash
+python webui/gradio_app.py
+```
 
 
 

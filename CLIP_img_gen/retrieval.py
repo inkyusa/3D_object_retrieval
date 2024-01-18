@@ -10,7 +10,7 @@ import clip
 import cv2
 from PIL import Image
 
-import ipdb
+# import ipdb
 
 FAISS_GPU_IDX_PATH = "emb/faiss_idx_gltf_all.npy"
 OBJ_PATH = 'emb/gltf_all_keys.pkl'

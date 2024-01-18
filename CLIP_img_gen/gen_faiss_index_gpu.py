@@ -3,7 +3,7 @@ import faiss
 import torch
 import numpy as np
 import argparse
-import ipdb
+# import ipdb
 
 # EMB_PATH = 'emb/objaverse_origin_img_emb_22w.pt'
 # EMB_PATH = 'emb/lowpoly_origin_img_emb_building_22views.pt'

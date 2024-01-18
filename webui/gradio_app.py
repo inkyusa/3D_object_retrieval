@@ -33,7 +33,7 @@ from CLIP_img_gen.retrieval import (
     retrive_topk_paths,
 )
 
-from ipdb import set_trace as st
+# from ipdb import set_trace as st
     
 def update_progress(progress, progress_path):
     with open(progress_path) as fi:
