@@ -2,6 +2,14 @@
 
 This repo contains 3D model retreival either from text or image
 
+<img src="./assets/diagram.png" width="700"> 
+
+## Technical detail and results 
+More technical detail and experimental results can be found from [here](https://tencentoverseas-my.sharepoint.com/:p:/g/personal/inkyusa_global_tencent_com/ESpkXrXoKTVLiNJRMkgX9_MBpTdQJ0-xG4eZOt6ENNRZDA?e=auxd90) 
+ 
+<img src="./assets/profiling.png" width="700"> 
+
+
 ## Software version
 | Package | Version      | Description            |
 |---------|--------------|------------------------|
