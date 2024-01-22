@@ -143,12 +143,12 @@ def launch(
     """
 
     with gr.Blocks(
-        title="Objaverse Retrive - Web Demo",
+        title="Low-poly Retrival Demo",
         css=css,
     ) as demo:
         with gr.Row(equal_height=True):
             header = """
-            # Objaverse Retrive Demo
+            # Low-poly Retrival Demo
             """
             gr.Markdown(header)
         
