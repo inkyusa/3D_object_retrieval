@@ -18,6 +18,7 @@ import clip
 import numpy as np
 import rembg
 import torch
+
 from PIL import Image
 
 OBJAVERSE_PATH = '/media/inkyu/SSD_2TB_Black/Dataset/3D_assets/gltf_all'
@@ -194,11 +195,11 @@ def launch(
                 with gr.Row():
                     retrive_btn = gr.Button(value="Retrive using Image", variant="primary")
                 with gr.Row():
-                    output_mesh1 = gr.Model3D(value=None, label="Generated Mesh", interactive=False)
+                    output_mesh1 = gr.Model3D(value=None, label="Retrieved model", interactive=False)
                 with gr.Row():
-                    output_mesh2 = gr.Model3D(value=None, label="Generated Mesh", interactive=False)
+                    output_mesh2 = gr.Model3D(value=None, label="Retrieved model", interactive=False)
                 with gr.Row():
-                    output_mesh3 = gr.Model3D(value=None, label="Generated Mesh", interactive=False)
+                    output_mesh3 = gr.Model3D(value=None, label="Retrieved model", interactive=False)
                 
         # txt2img_btn.click(
         #     fn=txt_img,
