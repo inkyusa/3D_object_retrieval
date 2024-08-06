@@ -4,9 +4,7 @@ This repo contains 3D model retreival either from text or image
 
 <img src="./assets/diagram.png" width="700"> 
 
-## Technical detail and results 
-More technical detail and experimental results can be found from [here](https://tencentoverseas-my.sharepoint.com/:p:/g/personal/inkyusa_global_tencent_com/ESpkXrXoKTVLiNJRMkgX9_MBpTdQJ0-xG4eZOt6ENNRZDA?e=auxd90) 
- 
+
 <img src="./assets/profiling.png" width="700"> 
 
 
@@ -29,10 +27,27 @@ pip install torch==1.13.0 torchvision==0.14.0 rembg faiss-gpu==1.7.2 diffusers==
 ```
 
 ## Dataset download
-(WIP)
+<img src="./assets/low-poly-asset-rendering.png" width="700">
+
+We used free-lowpoly assets that can be downloaded from [Unity store](https://assetstore.unity.com/popular-assets--low-poly) for simplity but one can use a larger scale 3D dataset (e.g., [Objaverse XL](https://objaverse.allenai.org/))
 
 # Objaverse Retrival
+## Overall pipeline
+<img src="./assets/pipeline1.png" width="700">
+<img src="./assets/pipeline2.png" width="700">
 
+### Text-based retrieval experimental results
+The top row indicates the most probable retrieval results (k = 3).
+<img src="./assets/txt_retrieval1.png" width="350">
+<img src="./assets/txt_retrieval2.png" width="350">
+<img src="./assets/txt_retrieval3.png" width="350">
+There are some false positive at lower-ranking retrievals.
+
+### Image-based retrieval experimental results
+<img src="./assets/img_retrieval1.png" width="350">
+<img src="./assets/img_retrieval2.png" width="350">
+
+# Step-by-step guide
 ## 1. Generate asset foler name json
 ```bash
 python CLIP_img_gen/gen_json.py --folder_path /home/inkyu/workspace/objaverse-rendering-private/rendered/gltf_all --output_file /home/inkyu/workspace/objaverse-rendering-private/rendered/rendering_folder_names_gltf_all.json
