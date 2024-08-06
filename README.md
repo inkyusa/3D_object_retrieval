@@ -38,14 +38,14 @@ We used free-lowpoly assets that can be downloaded from [Unity store](https://as
 
 ### Text-based retrieval experimental results
 The top row indicates the most probable retrieval results (k = 3).
-<img src="./assets/txt_retrieval1.png" width="350">
-<img src="./assets/txt_retrieval2.png" width="350">
-<img src="./assets/txt_retrieval3.png" width="350">
+<img src="./assets/txt_retrieval1.png" width="700">
+<img src="./assets/txt_retrieval2.png" width="700">
+<img src="./assets/txt_retrieval3.png" width="700">
 There are some false positive at lower-ranking retrievals.
 
 ### Image-based retrieval experimental results
-<img src="./assets/img_retrieval1.png" width="350">
-<img src="./assets/img_retrieval2.png" width="350">
+<img src="./assets/img_retrieval1.png" width="700">
+<img src="./assets/img_retrieval2.png" width="700">
 
 # Step-by-step guide
 ## 1. Generate asset foler name json
