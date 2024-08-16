@@ -2,9 +2,13 @@
 
 This repo contains 3D model retreival either from text or image
 
+### simple demo
+<img src="./assets/low-poly-object-retrieval_reduced.gif" width="700">
+
+### Overall pipeline diagram
 <img src="./assets/diagram.png" width="700"> 
 
-
+### Profiling
 <img src="./assets/profiling.png" width="700"> 
 
 
